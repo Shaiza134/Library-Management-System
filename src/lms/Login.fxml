@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #778899;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lms.LoginController">
+    <children>
+        <Label fx:id="label" layoutX="549.0" layoutY="161.0" minHeight="16" minWidth="54.0" prefHeight="43.0" prefWidth="83.0" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font name="Monospace 821 Bold BT" size="24.0" />
+         </font></Label>
+      <Label layoutX="429.0" layoutY="238.0" prefHeight="27.0" prefWidth="96.0" text="Username:" textFill="#f8f8f8">
+         <font>
+            <Font name="Monospace 821 BT" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="438.0" layoutY="300.0" text="Password:" textFill="WHITE">
+         <font>
+            <Font name="Monospace 821 BT" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="loginB" layoutX="492.0" layoutY="466.0" onAction="#HandleLoginButton" prefHeight="34.0" prefWidth="83.0" text="LOGIN" />
+      <Button fx:id="exitB" layoutX="617.0" layoutY="466.0" onAction="#HandleExitButton" prefHeight="34.0" prefWidth="66.0" text="EXIT" />
+      <Label fx:id="invalidL" layoutX="412.0" layoutY="376.0" prefHeight="34.0" prefWidth="322.0" textFill="RED">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tf1" layoutX="533.0" layoutY="239.0" prefHeight="25.0" prefWidth="168.0" />
+      <PasswordField fx:id="PasswordField" layoutX="533.0" layoutY="300.0" prefHeight="27.0" prefWidth="168.0" />
+      <ImageView fitHeight="604.0" fitWidth="394.0" layoutX="-4.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../pecy8k.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="-3.0" layoutY="-3.0" prefHeight="43.0" prefWidth="755.0" style="-fx-background-color: black;">
+         <font>
+            <Font name="Baskerville Old Face" size="12.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </Label>
+      <Label layoutX="-5.0" layoutY="554.0" prefHeight="50.0" prefWidth="761.0" style="-fx-background-color: black;" text="Label" />
+      <Label layoutX="169.0" layoutY="40.0" prefHeight="50.0" prefWidth="426.0" style="-fx-background-color: black;" text="Library Managment System" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="32.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

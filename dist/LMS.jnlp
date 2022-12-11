@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="LMS.jnlp">
+  <information>
+    <title>LMS</title>
+    <vendor>Zahra Maryam</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="LMS.jar" size="410725" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.29.jar" size="2519547" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="lms.LMS"  name="LMS" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #778899;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lms.RetrunUserController">
+   <children>
+      <Label layoutX="279.0" layoutY="72.0" prefHeight="57.0" prefWidth="179.0" style="-fx-background-color: black;" text="  Return Book" textFill="#f5f5f5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="206.0" prefHeight="37.0" prefWidth="68.0" text="Name" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="268.0" prefHeight="29.0" prefWidth="57.0" text="Book" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="167.0" layoutY="334.0" prefHeight="35.0" prefWidth="68.0" text="Date" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TFName" layoutX="328.0" layoutY="206.0" prefHeight="37.0" prefWidth="229.0" />
+      <TextField fx:id="TFBook" layoutX="328.0" layoutY="266.0" prefHeight="37.0" prefWidth="229.0" />
+      <Button fx:id="SubmitB" layoutX="262.0" layoutY="451.0" mnemonicParsing="false" onAction="#HandleSubmitAction" prefHeight="47.0" prefWidth="100.0" text="Submit" />
+      <Button fx:id="CancelB" layoutX="413.0" layoutY="451.0" mnemonicParsing="false" onAction="#HandleCancelAction" prefHeight="47.0" prefWidth="100.0" text="Cancel" />
+      <Button fx:id="BackB" layoutX="568.0" layoutY="525.0" mnemonicParsing="false" onAction="#HandleBackAction" prefHeight="47.0" prefWidth="107.0" text="Back" />
+      <DatePicker fx:id="TFDate" layoutX="328.0" layoutY="333.0" prefHeight="37.0" prefWidth="229.0" />
+   </children>
+</AnchorPane>

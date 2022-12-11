@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="572.0" prefWidth="750.0" style="-fx-background-color: #778899;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lms.BookController">
+   <children>
+      <Label layoutX="85.0" layoutY="104.0" prefHeight="50.0" prefWidth="116.0" style="-fx-background-color: black;" text="  Add Book" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TFName" layoutX="99.0" layoutY="227.0" prefHeight="30.0" prefWidth="160.0" />
+      <TextField fx:id="TFAuthor" layoutX="98.0" layoutY="277.0" prefHeight="30.0" prefWidth="160.0" />
+      <TextField fx:id="TFEdition" layoutX="98.0" layoutY="381.0" prefHeight="30.0" prefWidth="160.0" />
+      <TextField fx:id="TFCategory" layoutX="98.0" layoutY="331.0" prefHeight="30.0" prefWidth="160.0" />
+      <Label layoutX="27.0" layoutY="227.0" prefHeight="30.0" prefWidth="50.0" text="Name:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="277.0" prefHeight="30.0" prefWidth="51.0" text="Author:" textFill="#eeeeee">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="322.0" prefHeight="30.0" prefWidth="71.0" text="Category:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="385.0" text="Edition:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="AddB" layoutX="54.0" layoutY="443.0" mnemonicParsing="false" onAction="#HandleAddAction" prefHeight="42.0" prefWidth="91.0" text="Add" />
+      <Button fx:id="UpdateB" layoutX="179.0" layoutY="443.0" mnemonicParsing="false" onAction="#HandleUpdateAction" prefHeight="42.0" prefWidth="91.0" text="Update" />
+      <Button fx:id="RemoveB" layoutX="123.0" layoutY="505.0" mnemonicParsing="false" onAction="#HandleRemoveAction" prefHeight="42.0" prefWidth="91.0" text="Remove" />
+      <TableView fx:id="tableView1" layoutX="287.0" layoutY="3.0" prefHeight="496.0" prefWidth="463.0">
+        <columns>
+          <TableColumn fx:id="Col_Name" prefWidth="125.0" text="Name" />
+          <TableColumn fx:id="Col_Author" prefWidth="116.0" text="Author" />
+            <TableColumn fx:id="Col_Category" prefWidth="117.0" text="Category" />
+            <TableColumn fx:id="Col_Edition" minWidth="0.0" prefWidth="104.0" text="Edition" />
+        </columns>
+      </TableView>
+      <Button fx:id="BackB" layoutX="618.0" layoutY="516.0" mnemonicParsing="false" onAction="#HandleBackAction" prefHeight="42.0" prefWidth="91.0" text="Back" />
+   </children>
+</AnchorPane>
